@@ -8,7 +8,7 @@ steps:
 - task: mabl-azure-devops-extension@1
   displayName: 'ADO demo'
   inputs:
-    apiKey: 'g2kqflv9IlhRwyz1LfrkXA'
+    apiKey: $(api key)
     applicationId: 'RnU0iyZudvwQnIpS2Y9Giw-a'
     environmentId: 'F06zyk1ooG31z3nVdR4gSA-e'
     labels: 'invoice'
