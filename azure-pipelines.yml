@@ -1,0 +1,25 @@
+# Starter pipeline
+- task: mabl-azure-devops-extension@1
+  inputs:
+    apiKey: 'g2kqflv9IlhRwyz1LfrkXA'
+    applicationId: 'RnU0iyZudvwQnIpS2Y9Giw-a'
+    environmentId: 'F06zyk1ooG31z3nVdR4gSA-e'
+    labels: 'invoice'
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
